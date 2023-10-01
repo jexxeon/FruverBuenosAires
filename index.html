@@ -3,129 +3,236 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FRUVER BUENOS AIRES</title>
-    <!-- Agregamos los enlaces a los archivos CSS de Bootstrap -->
-    <link
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+    <title>Mi Página Web</title>
     <style>
-      /* Estilos para hacer las imágenes circulares */
-      .img-circle {
-        border-radius: 100%;
-        width: 300px;
-        height: 200px;
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
       }
-      .medio {
-        height: 600px;
+
+      .container {
+        width: 80%;
+        margin: 20px auto 0; /* Agregamos espacio en la parte superior */
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        padding: 20px;
       }
-      .texto {text-align: center;}
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+      }
+
+      #logo {
+        width: 200px;
+        height: 150px;
+      }
+
+      #user {
+        width: 40px;
+        height: 40px;
+        padding-right: 40px;
+      }
+
+      #carrito {
+        width: 50px;
+        height: 45px;
+        padding-right: 10px;
+      }
+
+      .user-icon,
+      .cart-icon {
+        font-size: 24px;
+        margin-left: 10px;
+      }
+
+      nav {
+        background-color: #91b450;
+        color: white;
+        padding: 10px 0;
+      }
+      #contactonav {
+        padding-left: 10px;
+        color: black;
+      }
+      .barrabuscar {
+        padding: 5px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        display: flexbox;
+        margin-right: 10px;
+        margin-bottom: 10px;
+      }
+      #lupa {
+        width: 30px;
+        height: 30px;
+        
+      }
+
+      .contact {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+      }
+
+      .search-icon {
+        font-size: 20px;
+        margin-right: 10px;
+      }
+
+      .content {
+        padding: 20px 0;
+      }
+
+      footer {
+        background-color: #91b450;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+      }
+
+      .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        width: 80%;
+      }
+
+      .Informacion {
+        color: black;
+      }
+
+      .Nosotros {
+        color: black;
+      }
+
+      .Preguntas {
+        color: black;
+      }
+
+      .Terminos {
+        color: black;
+      }
+
+      .Politicas {
+        color: black;
+      }
+
+      .Direccion {
+        color: black;
+      }
+
+      .Telefono {
+        color: black;
+      }
+
+      .Correo {
+        color: black;
+      }
+
+      .ProductosYProveedores {
+        color: black;
+      }
+
+      .FruverBuenosAires1 {
+        color: black;
+      }
+
     </style>
   </head>
   <body>
-    <!-- Barra de navegación -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">FRUVER BUENOS AIRES</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Buscar</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Iniciar Sesión</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Registrar</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <!-- Contenido principal -->
-    <div class="container mt-5 medio">
-      <div class="row">
-        <div class="col-md-3">
-          <img
-            src="./util/oferta250.png"
-            class="img-fluid img-circle"
-            alt="Ofertas"
-          />
-          <p class="texto"><b><u>Ofertas del día</u></b></p>
+    <div class="container">
+      <header>
+        <img src="./util/LOGO.png" alt="Logo" id="logo" />
+        <div>
+          <img src="./util/USER.png" alt="user" id="user" />
+          <img src="./util/Carrito.png" alt="carrito" id="carrito" />
         </div>
-        <div class="col-md-3">
-          <img
-            src="./util/frutas225.png"
-            class="img-fluid img-circle"
-            alt="Frutas"
-          />
-          <p class="texto"><b><u>Frutas</u></b></p>
-        </div>
-        <div class="col-md-3">
-          <img
-            src="./util/verduras.png"
-            class="img-fluid img-circle"
-            alt="Verduras"
-          />
-          <p class="texto"><b><u>Verduras</u></b></p>
-        </div>
-        <div class="col-md-3">
-          <img
-            src="./util/condimentos200.png"
-            class="img-fluid img-circle"
-            alt="Condimentos"
-          />
-          <p class="texto"><b><u>Condimentos</u></b></p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Pie de página -->
-    <footer class="bg-dark text-white text-center py-3">
-      <div class="container">
-        <p>Contacto: info@fruverbuenosaires.co</p>
-        <p>Domicilio: 3150001458</p>
-      </div>
-    </footer>
-
-    <!-- Segundo contenedor con columnas -->
-    <div class="bg-light py-3">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3">
-            <ul class="list-unstyled">
-              <li>Mi cuenta</li>
-              <li>Ayuda</li>
-              <li>Nosotros</li>
-              <li>Carrito</li>
-            </ul>
+      </header>
+      <nav>
+        <div class="contact">
+          <div>
+            <img
+              src="./util/contacto.png"
+              alt="Contacto"
+              width="20"
+              id="contacto"
+            />
+            <span id="contactonav">Contacto</span>
           </div>
-          <div class="col-md-3">
-            <ul class="list-unstyled">
-              <li>Términos y condiciones</li>
-
-              <li>Contacto</li>
-              <li>Seguir comprando</li>
-              <li>Política de privacidad</li>
-            </ul>
+          <div>
+            <input class="barrabuscar" type="text" placeholder="Buscar..." />
+            <img src="./util/lupa.png" alt="lupa" id="lupa" />
           </div>
         </div>
-      </div>
+      </nav>
+      <div class="content"></div>
+      <footer>
+        <div class="footer-container">
+          <div>
+            <p class="FruverBuenosAires1"><u>Fruver Buenos Aires</u></p>
+            <p class="Direccion">
+              <img
+                src="./util/DIRECION.png"
+                alt="Dirección"
+                width="20"
+                style="padding-right: 10px"
+                id="dirección"
+              />Cll 90 45-100
+            </p>
+            <p class="Telefono"> 
+              <img
+                src="./util/telefono.png"
+                alt="Teléfono"
+                width="20"
+                style="padding-right: 10px"
+                id="telefono"
+              />3150001458
+            </p>
+            <p class="Correo">
+              <img
+                src="./util/CORREO.png"
+                alt="correo"
+                width="20"
+                style="padding-right: 10px"
+                id="correo"
+              />fruver_buenosaires@gmail.com
+            </p>
+          </div>
+          <div>
+            <p class="ProductosYProveedores"><u>Productos / Proveedores</u></p>
+            <p>
+            <img
+              src="./util/company.png"
+              alt="company"
+              width="50"
+              style="padding-right: 10px"
+              id="company"
+              />
+            </p>
+            <img
+              src="./util/montero.png"
+              alt="montero"
+              width="100"
+              style="padding-right: 10px"
+              id="montero"
+              />
+            </p>
+          </div>
+          <div>
+            <p class="Informacion"><u>Más información</u></p>
+            <p class="Nosotros">Nosotros</p>
+            <p class="Preguntas">Preguntas Frecuentes</p>
+            <p class="Terminos">Terminos y Condiciones</p>
+            <p class="Politicas">Politicas de Privacidad</p>
+          </div>
+        </div>
+      </footer>
     </div>
-
-    <!-- Agregamos los enlaces a los archivos JavaScript de Bootstrap y jQuery (necesarios para el funcionamiento de Bootstrap) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>
