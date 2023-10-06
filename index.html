@@ -3,147 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mi Página Web</title>
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        font-family: Arial, sans-serif;
-      }
-
-      .container {
-        width: 80%;
-        margin: 20px auto 0; /* Agregamos espacio en la parte superior */
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-        padding: 20px;
-      }
-
-      header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 0;
-      }
-
-      #logo {
-        width: 200px;
-        height: 150px;
-      }
-
-      #user {
-        width: 40px;
-        height: 40px;
-        padding-right: 40px;
-      }
-
-      #carrito {
-        width: 50px;
-        height: 45px;
-        padding-right: 10px;
-      }
-
-      .user-icon,
-      .cart-icon {
-        font-size: 24px;
-        margin-left: 10px;
-      }
-
-      nav {
-        background-color: #91b450;
-        color: white;
-        padding: 10px 0;
-      }
-      #contactonav {
-        padding-left: 10px;
-        color: black;
-      }
-      .barrabuscar {
-        padding: 5px;
-        border: none;
-        border-radius: 5px;
-        font-size: 16px;
-        display: flexbox;
-        margin-right: 10px;
-        margin-bottom: 10px;
-      }
-      #lupa {
-        width: 30px;
-        height: 30px;
-        
-      }
-
-      .contact {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 20px;
-      }
-
-      .search-icon {
-        font-size: 20px;
-        margin-right: 10px;
-      }
-
-      .content {
-        padding: 20px 0;
-      }
-
-      footer {
-        background-color: #91b450;
-        color: white;
-        padding: 20px 0;
-        text-align: center;
-      }
-
-      .footer-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 0 auto;
-        width: 80%;
-      }
-
-      .Informacion {
-        color: black;
-      }
-
-      .Nosotros {
-        color: black;
-      }
-
-      .Preguntas {
-        color: black;
-      }
-
-      .Terminos {
-        color: black;
-      }
-
-      .Politicas {
-        color: black;
-      }
-
-      .Direccion {
-        color: black;
-      }
-
-      .Telefono {
-        color: black;
-      }
-
-      .Correo {
-        color: black;
-      }
-
-      .ProductosYProveedores {
-        color: black;
-      }
-
-      .FruverBuenosAires1 {
-        color: black;
-      }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <title>Fruver Buenos Aires</title>
   </head>
   <body>
     <div class="container">
@@ -171,7 +32,19 @@
           </div>
         </div>
       </nav>
-      <div class="content"></div>
+      <div class="content">
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slide frutas" ><img src="./util/frutascarrusel.png" alt="Slide 1"></div>
+            <div class="slide " ><img src="./util/Imagen2.jpeg" alt="Slide 2"></div>
+            <div class="slide " ><img src="./util/Imagen5.jpeg" alt="Slide 3"></div>
+            <div class="slide " ><img src="./util/Imagen7.jpeg" alt="Slide 4"></div>
+            <div class="slide " ><img src="./util/Imagen9.jpeg" alt="Slide 5"></div>
+          </div>
+          <button id="prevBtn"><img src="./util/flechaizquierda.png" height="40px" width="50px"></button>
+          <button id="nextBtn"><img src="./util/flechaderecha.png" height="40px" width="50px"></button>  
+        </div>
+      </div>   
       <footer>
         <div class="footer-container">
           <div>
@@ -234,5 +107,7 @@
         </div>
       </footer>
     </div>
+    <script src="script.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
