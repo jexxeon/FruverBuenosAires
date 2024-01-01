@@ -27,5 +27,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
   nextBtn.addEventListener('click', nextSlide);
   prevBtn.addEventListener('click', prevSlide);
-  setInterval(nextSlide, 3800); 
+  setInterval(nextSlide, 5000); 
 });

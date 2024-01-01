@@ -86,20 +86,22 @@ nav {
 }
 
 .slider-container {
-    width: 80%;
+    width: 100%;
     height: 500px;
     margin: auto;
     overflow: hidden;
+    
 }
 
 .slider {
     display: flex;
     width: 300%; 
-    transition: transform 1s ease-out;
+    transition: transform 3s ease-out;
 }
 
 .slide {
     min-width: 100%;
+    
     box-sizing: border-box; 
 }
 
@@ -120,10 +122,17 @@ button {
 
 #prevBtn {
     left: 30px;
+    background-color: transparent;
+  border: none;
+  
+  padding: 0;
 }
 
 #nextBtn {
     right: 40px;
+    background-color: transparent;
+  border: none;
+  padding: 0;
 }
 
 footer {
@@ -180,3 +189,44 @@ footer {
 .FruverBuenosAires1 {
     color: black;
 }
+.image-text-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px; /* Espacio entre el contenido y las imágenes */
+  }
+  
+  .image-text {
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .image-text img {
+    width: 150px; /* Establece el tamaño de las imágenes */
+    height: 150px;
+    border-radius: 50%; /* Si las imágenes son redondas */
+    margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+  }
+  
+  /* Estilos para cada imagen y texto */
+  .image-text:nth-child(1) {
+    background-color: #ff9154; /* Color de fondo para la primera imagen */
+  }
+  
+  .image-text:nth-child(2) {
+    background-color: #e8cd79; /* Color de fondo para la segunda imagen */
+  }
+  
+  .image-text:nth-child(3) {
+    background-color: #91b451; /* Color de fondo para la tercera imagen */
+  }
+  
+  .image-text:nth-child(4) {
+    background-color: #c71a16; /* Color de fondo para la cuarta imagen */
+  }
+  
+  .image-text p {
+    margin: 0;
+    color: black;
+    font-weight: bold; /* Puedes ajustar el estilo del texto según lo desees */
+  }
